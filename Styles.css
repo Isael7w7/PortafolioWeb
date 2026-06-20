@@ -1,0 +1,440 @@
+/* #region 1. Configuraciones Globales y Estilos Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background: radial-gradient(circle at 50% 0%, #1a2a44 0%, #0a0a0b 70%);
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Clases Utilitarias */
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px red solid; */
+}
+
+.margen {
+  padding: 15px;
+}
+
+.centrar {
+  text-align: center;
+  margin: auto;
+}
+
+.CuadroNegro {
+  background-color: #0a0a0b;
+  max-width: 100%;
+}
+/* #endregion */
+
+/* #region 2. Cabecera (Header y Navegación) */
+.Navegacion {
+  padding: 15px;
+  /* border: 1px rgb(255, 234, 0) solid; */
+}
+
+.Navegacion .contenedorNombre {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22%;
+  text-align: left;
+  /* border: 1px rgb(255, 234, 0) solid; */
+}
+
+.Navegacion .contenedorNombre a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 34px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.Navegacion .contenedorEnlaces {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  /* border: 1px rgb(255, 234, 0) solid; */
+}
+
+.Navegacion .contenedorEnlaces a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.Navegacion .contenedorEnlaces a:hover {
+  color: #007bff;
+  border-bottom: 4px solid #3b82f6;
+}
+
+.Navegacion .contenedorEnlaces a:last-child {
+  margin-right: 0;
+}
+
+.Navegacion .contenedorBoton {
+  width: 22%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  /* border: 1px rgb(255, 234, 0) solid; */
+}
+
+.Navegacion .contenedorBoton a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  padding: 7px 25px;
+  background-color: #adc7ff;
+  color: #007bff;
+}
+
+.Navegacion .contenedorBoton a:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+/* #endregion */
+
+/* #region 3. Sección de Presentación (cuadroHeader) */
+.cuadroHeader {
+  margin-top: 120px;
+}
+
+.cuadroHeader .contenedorInformacion {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+  /* border: 1px rgb(255, 234, 0) solid; */
+  text-align: left;
+}
+
+/* Espaciados mecánicos controlados */
+.cuadroHeader .contenedorInformacion .perfil-nombre {
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cuadroHeader .contenedorInformacion .perfil-titulo {
+  margin-bottom: 24px;
+  color: #adc7ff;
+}
+
+.cuadroHeader .contenedorInformacion .perfil-descripcion {
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Botones */
+.cuadroHeader .contenedorInformacion .btnProyecto {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px 20px;
+  background-color: #adc7ff;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+.cuadroHeader .contenedorInformacion .btnProyecto:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.cuadroHeader .contenedorInformacion .btnContacto {
+  text-decoration: none;
+  color: #007bff;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.cuadroHeader .contenedorInformacion .btnContacto:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Imagen de Perfil */
+.cuadroHeader .contenedorImg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+  /* border: 1px rgb(255, 234, 0) solid; */
+}
+
+.cuadroHeader .contenedorImg img {
+  max-width: 50%;
+  height: auto;
+}
+/* #endregion */
+
+/* #region 4. Sección: Sobre Mí */
+.contenedorSobreMi {
+  margin-top: 140px;
+}
+
+.contenedorSobreMi .contenedorPasion {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  /* border: 1px rgb(255, 234, 0) solid; */
+  text-align: left;
+}
+
+.contenedorSobreMi .contenedorPasion h2 {
+  font-size: 17px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contenedorSobreMi .contenedorPasion hr {
+  width: 55px;
+  height: 4px;
+  border: none;
+  background-color: #adc7ff;
+  margin-bottom: 20px;
+}
+
+.contenedorSobreMi .contenedorPasion p {
+  font-size: 15px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Contenedor Logros Destacados */
+.contenedorSobreMi .contenedorLogros {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  /* border: 1px rgb(255, 234, 0) solid; */
+  text-align: left;
+  padding-left: 20px;
+}
+
+.contenedorSobreMi .contenedorLogros h2 {
+  font-size: 17px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contenedorSobreMi .contenedorLogros hr {
+  width: 55px;
+  height: 4px;
+  border: none;
+  background-color: #adc7ff;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la Lista de Logros */
+.contenedorSobreMi .lista-logros {
+  list-style-type: none;
+}
+
+.contenedorSobreMi .lista-logros li {
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.contenedorSobreMi .lista-logros li strong {
+  color: #adc7ff;
+  display: block;
+  margin-bottom: 4px;
+}
+.cuadroSeccion {
+  margin-top: 120px;
+}
+
+.titulo-seccion {
+  font-size: 24px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.linea-seccion {
+  width: 60px;
+  height: 4px;
+  border: none;
+  background-color: #adc7ff;
+  margin: 0 auto 40px auto;
+}
+
+/* --- ESTILOS: TECNOLOGÍAS --- */
+.contenedorGridTecnologias {
+  text-align: center;
+}
+
+.tarjeta-tecnologia {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin: 1%;
+  background-color: #0a0a0b;
+  border: 1px rgb(255, 234, 0) solid; /* Tu marco de guía */
+  padding: 20px;
+  text-align: left;
+}
+
+.tarjeta-tecnologia p {
+  font-weight: bold;
+  color: #adc7ff;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.tarjeta-tecnologia span {
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 18px;
+}
+
+/* --- ESTILOS: PROYECTOS --- */
+.contenedorProyectos {
+  text-align: center;
+}
+
+.tarjeta-proyecto {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 1%;
+  background-color: #121214;
+  border: 1px rgb(255, 234, 0) solid; /* Tu marco de guía */
+  padding: 25px;
+  text-align: left;
+}
+
+.tarjeta-proyecto h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.tarjeta-proyecto p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #cccccc;
+  margin-bottom: 20px;
+  min-height: 88px; /* Mantiene las tarjetas alineadas aunque cambie el texto */
+}
+
+.tarjeta-proyecto a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #007bff;
+}
+
+/* --- ESTILOS: CONTACTO --- */
+.contenedorContacto {
+  text-align: center;
+}
+
+.info-contacto {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-right: 4%;
+  text-align: left;
+  border: 1px rgb(255, 234, 0) solid; /* Tu marco de guía */
+  padding: 20px;
+}
+
+.info-contacto h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #ccccff;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  text-align: left;
+  border: 1px rgb(255, 234, 0) solid; /* Tu marco de guía */
+  padding: 20px;
+}
+
+/* Elementos del Formulario */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #0a0a0b;
+  border: 1px solid #3b82f6;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario-contacto textarea {
+  resize: none;
+}
+
+.btnEnviar {
+  background-color: #adc7ff;
+  color: #007bff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnEnviar:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+/* --- ESTILOS: FOOTER --- */
+.contenedorFooter {
+  padding: 20px 0;
+  border-top: 1px solid #1a2a44;
+}
+
+.contenedorFooter p {
+  font-size: 14px;
+  color: #888888;
+}
+
+.contenedorFooter .subtexto-footer {
+  font-size: 12px;
+  color: #444444;
+  margin-top: 5px;
+}
+/* #endregion */
