@@ -438,3 +438,90 @@ body {
   margin-top: 5px;
 }
 /* #endregion */
+
+/* VISTAS EN MOVIL */
+/* #region 9. Reglas Responsivas (Media Queries para Móviles) */
+
+@media screen and (max-width: 768px) {
+  /* 1. Ajustes del contenedor global */
+  .ancho {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* 2. Cabecera y Navegación */
+  .Navegacion .contenedorNombre,
+  .Navegacion .contenedorEnlaces,
+  .Navegacion .contenedorBoton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .Navegacion .contenedorEnlaces a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  /* 3. Presentación (Hero) */
+  .cuadroHeader {
+    margin-top: 40px;
+  }
+
+  .cuadroHeader .contenedorInformacion,
+  .cuadroHeader .contenedorImg {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cuadroHeader .contenedorInformacion {
+    margin-bottom: 40px;
+  }
+
+  .cuadroHeader .contenedorImg img {
+    max-width: 70%;
+  }
+
+  /* 4. Sobre Mí */
+  .contenedorSobreMi {
+    margin-top: 60px;
+  }
+
+  .contenedorSobreMi .contenedorPasion,
+  .contenedorSobreMi .contenedorLogros {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  /* 5. Tecnologías: De 4 columnas a 2 columnas */
+  .tarjeta-tecnologia {
+    width: 46%;
+    margin: 2%;
+  }
+
+  /* 6. Proyectos: De 3 columnas a 1 sola columna vertical */
+  .tarjeta-proyecto {
+    width: 96%;
+    margin: 2% auto;
+    display: block;
+  }
+
+  .tarjeta-proyecto p {
+    min-height: auto;
+  }
+
+  /* 7. Contacto*/
+  .info-contacto,
+  .formulario-contacto {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* #endregion */
